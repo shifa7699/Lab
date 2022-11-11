@@ -25,13 +25,9 @@ public class StringLab
 		System.out.println(sb.replace(14,20,"Builder"));
 		
 		//problem statement 3
-		StringBuilder s1=new StringBuilder("||");
-		StringTokenizer st=new StringTokenizer("C://IBM//DB2//PROGRAM//DB2COPY1.EXE");
-		while(st.hasMoreTokens())  //boolean method, it checks if there is more token available or not
-		{
-			System.out.println();
-			System.out.print(st.nextToken("/")); //String method, it returns the next token from string tokenizer object
-			
-		}
+		StringBuilder s1=new StringBuilder("/C://IBM//DB2//PROGRAM//DB2COPY1.EXE/");
+		System.out.println("Drive : "+s1.substring(0,3));
+		System.out.println("Folder : "+s1.substring(3,6).concat("||")+s1.substring(7,10).concat("||")+s1.substring(11,18));
+		System.out.println("File: "+s1.substring(20));
 	}
 }
