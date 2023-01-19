@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/data/jpa
+ https://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+ 
+ <bean id ="Ct" class ="com.Spring.entity.City">
+ <constructor-arg type= "String" value ="Asansol"/>
+ <constructor-arg  value ="77379"/>
+ </bean>
+ 
+ <bean id ="M" class ="com.Spring.entity.Marks">
+ <constructor-arg  value ="111"/>
+<constructor-arg  value ="Grade List : "/>
+ <constructor-arg>
+ <list>
+ <value>"100-90" (GRADE A) </value>
+  <value>"80-70"  (GRADE B)</value>
+  <value> "60-50"  (GRADE C)</value>
+  <value>"40-30"  (GRADE D)</value>
+  <value>"Below"  FAIL</value>
+ </list>
+ </constructor-arg>
+ </bean>
+ 
+ <bean id="addr" class="com.Spring.entity.C_Address">
+ <constructor-arg  value="Kolkata"/>
+ <constructor-arg  value="WB"/>
+  <constructor-arg  value="India"/>
+  </bean>
+ <bean id="C" class="com.Spring.entity.College">
+ <constructor-arg  value="BB College"/>
+ <constructor-arg  value="bbcollege@gmail.com"/>
+ <constructor-arg  value="09873791"/>
+  <constructor-arg> <ref bean="addr"/></constructor-arg>
+ </bean>
+ </beans>
