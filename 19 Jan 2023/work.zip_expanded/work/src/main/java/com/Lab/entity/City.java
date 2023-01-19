@@ -24,7 +24,7 @@ package com.Lab.entity;
 			this.pincode=pincode;
 		}
 		public void display()  {
-			System.out.println(cityname+" "+pincode);
+			System.out.println("The name of the City is : "+cityname+" and the Pincode is :"+pincode);
 		}
 	}
 
