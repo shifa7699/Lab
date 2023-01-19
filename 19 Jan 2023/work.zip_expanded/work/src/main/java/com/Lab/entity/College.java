@@ -20,7 +20,7 @@ package com.Lab.entity;
 			this.phone=phone;
 		}
 		public void display()  {
-			System.out.println(cname+" "+email+" "+phone);
+			System.out.println("The College name is : "+cname+"\n The E-mail is : "+email+"\n The Contact Number is : "+phone);
 			System.out.println(address.toString());
 		}
 	}
