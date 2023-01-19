@@ -7,12 +7,12 @@
  http://www.springframework.org/schema/data/jpa
  https://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
  
- <bean id ="Ct" class ="com.Spring.entity.City">
+ <bean id ="Ct" class ="com.Lab.entity.City">
  <constructor-arg type= "String" value ="Asansol"/>
  <constructor-arg  value ="77379"/>
  </bean>
  
- <bean id ="M" class ="com.Spring.entity.Marks">
+ <bean id ="M" class ="com.Lab.entity.Marks">
  <constructor-arg  value ="111"/>
 <constructor-arg  value ="Grade List : "/>
  <constructor-arg>
@@ -26,12 +26,12 @@
  </constructor-arg>
  </bean>
  
- <bean id="addr" class="com.Spring.entity.C_Address">
+ <bean id="addr" class="com.Lab.entity.Address">
  <constructor-arg  value="Kolkata"/>
  <constructor-arg  value="WB"/>
   <constructor-arg  value="India"/>
   </bean>
- <bean id="C" class="com.Spring.entity.College">
+ <bean id="C" class="com.Lab.entity.College">
  <constructor-arg  value="BB College"/>
  <constructor-arg  value="bbcollege@gmail.com"/>
  <constructor-arg  value="09873791"/>
